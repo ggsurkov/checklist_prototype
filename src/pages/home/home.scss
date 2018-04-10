@@ -1,0 +1,14 @@
+page-home {
+ .checklist-stroke {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   ion-icon {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 35pt;
+     cursor: pointer;
+   }
+ }
+}

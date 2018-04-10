@@ -1,0 +1,35 @@
+page-intro {
+  .ios, .md {
+
+    page-intro {
+
+      ion-slide {
+        background-color: #32db64;
+      }
+
+      ion-slide img {
+        height: 70vh !important;
+        width: auto !important;
+      }
+
+      ion-slide {
+        background-color: #32db64;
+      }
+
+    }
+
+  }
+  .tutorial-title {
+    margin-bottom: 20pt;
+  }
+  @media screen and (max-width: 360px) {
+    .swiper-slide img {
+      width: 85%;
+    }
+  }
+  @media screen and (max-height: 568px) {
+    .swiper-slide img {
+      width: 80%;
+    }
+  }
+}

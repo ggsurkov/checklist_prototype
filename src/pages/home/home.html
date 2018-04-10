@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ваши Чеклисты
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-searchbar [(ngModel)]="checklists"></ion-searchbar>
+  <ion-list *ngFor="let checklist of userChecklists |  search : 'userChecklistName':checklists">
+    <div class="checklist-stroke">
+      <ion-item (click)="editChecklist(checklist)">{{checklist.userChecklistName}}</ion-item>
+      <ion-icon name="close" (click)="openModalDeleteChecklist(checklist)"></ion-icon>
+    </div>
+  </ion-list>
+  <ion-fab right bottom>
+    <button ion-fab color="primary" (click)="createNewChecklist()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+
+</ion-content>
+

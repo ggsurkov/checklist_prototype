@@ -72,7 +72,7 @@
         </ion-item>
 
         <ion-item>
-          <ion-label>Оригинал ПТС – паспорта транспортного средства (без каких либо отметок) и совпадает с VIN-кодом
+          <ion-label>Оригинал ПТС – паспорта транспортного средства (без каких либо отметок). ПТС совпадает с VIN-кодом
             продаваемого автомобиля
           </ion-label>
           <ion-checkbox name="documents.checkboxe2" [(ngModel)]="checklist.documents[1]"
@@ -80,7 +80,7 @@
         </ion-item>
 
         <ion-item>
-          <ion-label>Найди VIN-код, проверить по нему автомобиль на юридическую частоту http://www.gibdd.ru; а так же
+          <ion-label>Проверить по VIN-коду автомобиль на юридическую чистоту http://www.gibdd.ru; а так же
             хозяина автомобиля http://fssprus.ru
           </ion-label>
           <ion-checkbox name="documents.checkboxe3" [(ngModel)]="checklist.documents[2]"
@@ -118,7 +118,7 @@
         </ion-item>
 
         <ion-item>
-          <ion-label>Свежая краска (если есть, возможно она скрывает ржавчину)</ion-label>
+          <ion-label>Отсутствие свежей краски (если есть, возможно она скрывает ржавчину)</ion-label>
           <ion-checkbox name="outerInspection4" [(ngModel)]="checklist.outerInspection[3]"
                         [checked]="checklist.outerInspection[3]"></ion-checkbox>
         </ion-item>
@@ -154,7 +154,7 @@
         </ion-item>
 
         <ion-item>
-          <ion-label>Фары и поворотники наповреждены и в полностью рабочем состоянии</ion-label>
+          <ion-label>Фары и поворотники неповреждены и полностью в рабочем состоянии</ion-label>
           <ion-checkbox name="outerInspection10" [(ngModel)]="checklist.outerInspection[9]"
                         [checked]="checklist.outerInspection[9]"></ion-checkbox>
         </ion-item>
@@ -166,12 +166,12 @@
           Шины
         </ion-list-header>
         <ion-item>
-          <ion-label>Шины известных брендов (Michelin, Bridgestone, Goodyear) - желательно</ion-label>
+          <ion-label>Шины известных брендов (Michelin, Bridgestone, Goodyear)</ion-label>
           <ion-checkbox name="tyres1" [(ngModel)]="checklist.tyres[0]"
                         [checked]="checklist.tyres[0]"></ion-checkbox>
         </ion-item>
         <ion-item>
-          <ion-label>Все шины той же марки</ion-label>
+          <ion-label>Все шины одной марки</ion-label>
           <ion-checkbox name="tyres2" [(ngModel)]="checklist.tyres[1]"
                         [checked]="checklist.tyres[1]"></ion-checkbox>
         </ion-item>
@@ -187,7 +187,7 @@
                         [checked]="checklist.tyres[3]"></ion-checkbox>
         </ion-item>
         <ion-item>
-          <ion-label>Запасное колесо, домкрат и ключ для замены имеются в наличии (в машине) и в полностью рабочем состоянии</ion-label>
+          <ion-label>Запасное колесо, домкрат и ключ для замены в наличии (в машине) и полностью в рабочем состоянии</ion-label>
           <ion-checkbox name="tyres5" [(ngModel)]="checklist.tyres[4]"
                         [checked]="checklist.tyres[4]"></ion-checkbox>
         </ion-item>
@@ -365,13 +365,13 @@
         </ion-item>
 
         <ion-item>
-          <ion-label>Аварийные огни работают нормально</ion-label>
+          <ion-label>Аварийные огни работают</ion-label>
           <ion-checkbox name="interior17" [(ngModel)]="checklist.interior[16]"
                         [checked]="checklist.interior[16]"></ion-checkbox>
         </ion-item>
 
         <ion-item>
-          <ion-label>Фары, включая подфарники и ходовые огни, работают нормально</ion-label>
+          <ion-label>Фары, включая подфарники и ходовые огни работают</ion-label>
           <ion-checkbox name="interior18" [(ngModel)]="checklist.interior[17]"
                         [checked]="checklist.interior[17]"></ion-checkbox>
         </ion-item>
@@ -382,7 +382,7 @@
           Кузов
         </ion-list-header>
         <ion-item>
-          <ion-label>Шасси не погнуто или сломано</ion-label>
+          <ion-label>Шасси не погнуто и не сломано</ion-label>
           <ion-checkbox name="carBody1" [(ngModel)]="checklist.carBody[0]"
                         [checked]="checklist.carBody[0]"></ion-checkbox>
         </ion-item>
@@ -406,7 +406,7 @@
           Трансмиссия
         </ion-list-header>
         <ion-item>
-          <ion-label>Жидкость в трансмиссии выглядит чистой, без грязи или песка (что указывает на возможные внутренние проблемы в трансмиссии)</ion-label>
+          <ion-label>Жидкость в трансмиссии выглядит чистой, без грязи или песка (наличие песка/грязи указывает на возможные внутренние проблемы в трансмиссии)</ion-label>
           <ion-checkbox name="transmission1" [(ngModel)]="checklist.transmission[0]"
                         [checked]="checklist.transmission[0]"></ion-checkbox>
         </ion-item>
@@ -436,7 +436,7 @@
           Тормоза
         </ion-list-header>
         <ion-item>
-          <ion-label>При нажатии на тормоза автомобиль продолжает двигаться прямо, не уводя ни в какую сторону</ion-label>
+          <ion-label>При нажатии на тормоза автомобиль продолжает двигаться прямо, не уходит ни в какую сторону</ion-label>
           <ion-checkbox name="carBrakes1" [(ngModel)]="checklist.carBrakes[0]"
                         [checked]="checklist.carBrakes[0]"></ion-checkbox>
         </ion-item>
@@ -466,7 +466,7 @@
           Рулевое управление
         </ion-list-header>
         <ion-item>
-          <ion-label>Автомобиль не тянет ни в одну из сторон без поворачивания руля</ion-label>
+          <ion-label>Автомобиль не тянет ни в одну из сторон без поворота рулем</ion-label>
           <ion-checkbox name="carSteering1" [(ngModel)]="checklist.carSteering[4]"
                         [checked]="checklist.carSteering[4]"></ion-checkbox>
         </ion-item>

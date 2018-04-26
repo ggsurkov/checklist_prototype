@@ -14,6 +14,23 @@
       <ion-icon name="close" (click)="openModalDeleteChecklist(checklist)"></ion-icon>
     </div>
   </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      Самое главное
+    </ion-list-header>
+    <ion-item>
+      <div class="checkbox-wrapper">
+        <button  class="my-three-state-checkbox" [ngClass]="{'grey': user.checkboxToggle === 'CHECKBOX_EMPTY', 'green': user.checkboxToggle === 'CHECKBOX_CHECK', 'red': user.checkboxToggle === 'CHECKBOX_UNCHECK'}"
+                 name="1111" (click)="turnCheckboxToggle(user.checkboxToggle)"
+        >
+        </button>
+        <button  class="checkbox-description" (click)="turnCheckboxToggle(user.checkboxToggle)" >Распечатайте ваш маршрут и билеты, копии паспортов. Распечатайте ваш маршрут и билеты, копии паспортов. Распечатайте ваш маршрут и билеты, копии паспортов.</button>
+      </div>
+    </ion-item>
+
+  </ion-list>
+
   <ion-fab right bottom>
     <button ion-fab color="primary" (click)="createNewChecklist()"><ion-icon name="add"></ion-icon></button>
   </ion-fab>
